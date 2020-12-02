@@ -1,0 +1,14 @@
+services:
+    awesome_http_client_factory:
+        class: NicolasJourdan\AwesomeBundle\Http\HttpClientFactory
+        public: false
+
+    awesome_request:
+        class: NicolasJourdan\AwesomeBundle\Http\Request
+        public: false
+        arguments: ["@awesome_http_client_factory"]
+
+    awesome_service:
+        class: NicolasJourdan\AwesomeBundle\Service\AwesomeService
+        public: false
+        arguments: ["@awesome_request"]

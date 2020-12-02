@@ -1,0 +1,25 @@
+{
+    "name": "nicolasjourdan/awesome-bundle",
+    "description": "This is an awesome bundle",
+    "type": "bundle",
+    "require": {
+        "symfony/framework-bundle": "~3.0|~4.0|~5.0",
+        "psr/http-message": "^1.0",
+        "psr/http-client-implementation": "^1.0",
+        "php-http/client-common": "^2.0",
+        "php-http/httplug": "^2.0",
+        "php-http/message-factory": "^1.0",
+        "php-http/discovery": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Nicolas Jourdan",
+            "email": "nicolas.jourdan.c@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NicolasJourdan\\AwesomeBundle\\": ""
+        }
+    }
+}
